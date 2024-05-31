@@ -66,8 +66,8 @@ function handleCarouselMove(positive = true) {
   carousel.scrollLeft = positive ? carousel.scrollLeft + slideWidth : carousel.scrollLeft - slideWidth;
 }
 
-next.addEventListener('click', handleScrollNext)
-prev.addEventListener('click', handleScrollPrev)
+// next.addEventListener('click', handleScrollNext)
+// prev.addEventListener('click', handleScrollPrev)
 
 // FAQ
 document.querySelectorAll(".accordion-item").forEach((item) => {
