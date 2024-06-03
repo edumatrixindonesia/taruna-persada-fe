@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+  z-index: 9;
+}
+nav.sticky {
+  padding: 10px 20px;
+  background: #08080886;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 4px;
+  transition: all 0.3 ease;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+.nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4 ease;
+}
+
+.nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+}
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-sizing: -5px 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 27px;
+}
+.logo-tp {
+  width: 55%;
+}
+.btn-konsultasi {
+  background: #df2028;
+  color: white;
+  border: 1px solid transparent;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* HERO */
+.bg-hero-komando {
+  height: auto;
+  width: 100%;
+  background-image: url("assets_komando/bg_komando.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.text-image-komando {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 15px;
+}
+.title-komando {
+  font-size: 80px;
+  color: white;
+  line-height: 80px;
+  width: 50%;
+}
+.text-komando {
+  color: rgb(192, 123, 19);
+}
+.deskripsi-komando {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: justify;
+}
+.model-komando {
+  bottom: 0;
+  width: 100%;
+}
+.btn-komando {
+  background: #df2028;
+  color: white;
+  border: 1px solid transparent;
+  padding: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* BENEFIT */
+.parent-benefit {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  background: #000000;
+}
+.title-benefit-komando {
+  font-size: 60px;
+  color: white;
+  line-height: 60px;
+  width: 40%;
+}
+.text-benefit {
+  color: rgb(192, 123, 19);
+}
+.parent-pricelist-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.img-pricelist {
+  width: 60%;
+}
+.logotp-edm {
+  width: 40%;
+}
+
+/* TIMELINE MATERI */
+.parent-materi-komando {
+  background: #000000;
+  color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+}
+.title-materi-komando {
+  border-left: 15px solid #df2028;
+}
+.img-materi-komando {
+  width: 100%;
+  margin-top: 20px;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin-top: 10px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  /* content: ""; */
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #df202938;
+  border: 4px solid #df2028;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #df202938;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #df202938;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #df202938;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #df202938 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #df202938;
+  position: relative;
+  border-radius: 6px;
+  color: #df2028;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #df202900 transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+    display: none;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* DIVINDER */
+.parent-divinder-komando {
+  background: #000000;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 30px;
+}
+
+/* GALERI KEGIATAN */
+.parent-galeri-kegiatan-komando {
+  background: #000000;
+  color: white;
+  padding-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.title-galeri-kegiatan-komando {
+  border-left: 15px solid #df2028;
+  margin-top: 0px;
+}
+:root {
+  --bg-clr: #000000;
+}
+body {
+  /* min-height: 100svh;
+  display: grid;
+  place-content: center; */
+  background-color: var(--bg-clr);
+}
+
+.carousel-wrapper-komando {
+  --width: 10%;
+  --gap: 0;
+  --num-items: 10;
+  --ani-offset: calc(var(--width) * var(--num-items) * -1);
+  --ani-speed: 10s;
+
+  /* width: 100%; */
+  overflow: hidden;
+  position: relative;
+  background: #000000;
+  padding-left: 10%;
+  margin-top: 30px;
+}
+.carousel-wrapper-komando::before,
+.carousel-wrapper-komando::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+}
+.carousel-wrapper-komando::before {
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    var(--bg-clr) 0%,
+    transparent 50%
+  );
+}
+.carousel-wrapper-komando::after {
+  right: 0;
+  background-image: linear-gradient(to left, var(--bg-clr) 0%, transparent 50%);
+}
+
+.carousel-komando {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide var(--ani-speed) linear infinite;
+  gap: 180px;
+}
+.item-komando {
+  flex: 1 0 var(--width);
+  text-align: center;
+  /* padding:1rem; */
+}
+.item-komando:last-child {
+  /*background: red;*/
+}
+.item-komando > .img-binsik-komando {
+  width: 200%;
+  /* height: auto;
+  object-fit: cover; */
+}
+
+@keyframes slide {
+  100% {
+    transform: translateX(var(--ani-offset));
+  }
+}
+
+/* PROMO SGS */
+.parent-promo-sgs-komando {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  padding-top: 80px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.img-promo-sgs-komando {
+  width: 100%;
+  border-radius: 10px;
+}

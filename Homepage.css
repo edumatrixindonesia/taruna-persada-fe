@@ -28,14 +28,6 @@ nav .nav-content {
   align-items: center;
   justify-content: space-between;
 }
-/* nav .logo a {
-  font-weight: 500;
-  font-size: 35px;
-  color: #353842;
-}
-nav.sticky .logo a {
-  color: #fff;
-} */
 
 .nav-content .nav-links {
   display: flex;
