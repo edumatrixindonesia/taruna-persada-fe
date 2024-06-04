@@ -96,6 +96,26 @@ nav .nav-content {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  cursor: pointer;
+}
+
+/* FLOATING CTA */
+.parent-cta {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 6%;
+  right: -6%;
+  gap: 10px;
+  z-index: 999;
+}
+.item-cta {
+  width: 25%;
+  cursor: pointer;
+}
+.item-cta-promo {
+  width: 40%;
+  cursor: pointer;
 }
 
 /* BOTTOM BAR */
@@ -349,7 +369,7 @@ nav .nav-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #a0151c;
+  background: #701014;
   width: 100%;
   height: auto;
   gap: 15px;
@@ -385,6 +405,153 @@ nav .nav-content {
   background: #000000;
   padding-top: 40px;
 }
+
+/* MASTER TEACHER */
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  /* border-radius: 25px; */
+}
+.card{
+  border-radius: 10px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 10px 14px;
+  gap: 5px;
+}
+.image-content{
+  position: relative;
+  row-gap: 0;
+  padding: 0 0;
+}
+.overlay{
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #4070F4; */
+  border-radius: 25px 25px 0 0px;
+}
+.overlay::before,
+.overlay::after{
+  /* content: ''; */
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #701014;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #701014;
+}
+.name{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+.description{
+  font-size: 16px;
+  color: #707070;
+  /* text-align: center; */
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #701014;
+  border-radius: 6px;
+  /* margin: 14px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #701014;
+}
+
+.swiper-navBtn{
+  color: #701014;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #701014;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #df2028;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #701014;
+}
+.title-mt {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.parent-card-mt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img-mt {
+  width: 15%;
+  border-radius: 100%;
+}
+.bg-mt {
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
 
 /* TIMELINE MATERI */
 .parent-materi {
@@ -612,6 +779,7 @@ body {
   }
 }
 
+/* NEW (tambah gap) */
 /* PROMO SGS */
 .parent-promo-sgs {
   display: flex;
@@ -621,12 +789,12 @@ body {
   padding-top: 80px;
   padding-left: 10%;
   padding-right: 10%;
+  gap: 20px;
 }
 .img-promo-sgs {
-  width: 100%;
+  width: 50%;
   border-radius: 10px;
 }
-
 
 /* TESTIMONI */
 .parent-testimoni-siswa {
@@ -1348,6 +1516,32 @@ main {
   .title-galeri-kegiatan {
     margin-top: 0;
   }
+  /* NEW */
+  /* FLOATING CTA */
+  .parent-cta {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 13%;
+    right: -48%;
+    gap: 0;
+    z-index: 999;
+  }
+  .item-cta {
+    width: 20%;
+    cursor: pointer;
+  }
+  .item-cta-promo {
+    width: 30%;
+    cursor: pointer;
+  }
+  .parent-promo-sgs {
+    display: grid;
+    gap: 5px;
+  }
+  .img-promo-sgs {
+    width: 100%;
+  }
 }
 
 /* TABLET */
@@ -1388,6 +1582,25 @@ main {
   .nav-content .nav-links {
     gap: 8px;
   }
+  /* NEW */
+  /* FLOATING CTA */
+  .parent-cta {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 3%;
+    right: -15%;
+    gap: 0;
+    z-index: 999;
+  }
+  .item-cta {
+    width: 25%;
+    cursor: pointer;
+  }
+  .item-cta-promo {
+    width: 35%;
+    cursor: pointer;
+  }
 }
 
 /* DESKTOP */
@@ -1404,7 +1617,8 @@ main {
   .parent-testimoni-siswa,
   .main-carousel,
   .parent-media-masa,
-  .parent-img-media-masa, .parent-faq {
+  .parent-img-media-masa,
+  .parent-faq {
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -1415,25 +1629,3 @@ main {
     width: 80%;
   }
 }
-
-/* @media only screen and (min-width: 903px) and (max-width: 1400px) {
-  .model-tp {
-    width: 60%;
-  }
-  .text-image,
-  .parent-best-program,
-  .text-image-about-tp,
-  .parent-materi,
-  .parent-galeri-kegiatan,
-  .parent-promo-sgs,
-  .parent-testimoni-siswa,
-  .main-carousel,
-  .parent-media-masa,
-  .parent-img-media-masa, .parent-faq {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  nav .nav-content {
-    justify-content: space-around;
-  }
-} */

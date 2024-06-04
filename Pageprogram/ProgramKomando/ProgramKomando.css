@@ -80,6 +80,7 @@ nav .nav-content {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* HERO */
@@ -130,6 +131,7 @@ nav .nav-content {
   font-weight: 600;
   font-size: 16px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /* BENEFIT */
@@ -408,4 +410,95 @@ body {
 .img-promo-sgs-komando {
   width: 100%;
   border-radius: 10px;
+}
+
+/* RESPONSIVE */
+/* PHONE */
+@media only screen and (min-width: 320px) and (max-width: 896px) {
+  nav {
+    display: none;
+  }
+  .text-image-komando {
+    display: grid;
+    place-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 8%;
+  }
+  .title-benefit-komando {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .parent-benefit {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .parent-pricelist-logo {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+  }
+  .img-pricelist {
+    width: 100%;
+  }
+  .title-komando {
+    width: 100%;
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+  .deskripsi-komando {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .btn-komando {
+    width: 100%;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+  .img-pricelist {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .parent-pricelist-logo {
+    justify-content: normal;
+    gap: 10px;
+  }
+  .text-image-komando {
+    display: grid;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 13%;
+  }
+  .btn-komando {
+    width: 100%;
+  }
+  nav .nav-content {
+    justify-content: space-evenly;
+  }
+  .parent-benefit {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .title-benefit-komando {
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 903px) and (max-width: 1537px) {
+  .text-image-komando, .parent-benefit {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  nav .nav-content {
+    justify-content: space-evenly;
+  }
 }

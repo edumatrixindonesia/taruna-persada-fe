@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Homepage.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
@@ -11,11 +16,7 @@
     <title>
       Bimbel TNI - Polri dan Sekolah Kedinasan Terbaik - #1 Taruna Persada
     </title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/logo/taruna_persada.ico"
-    />
+    <link rel="icon" href="/assets/logo/taruna_persada.ico" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -26,9 +27,14 @@
         /></a>
         <ul class="nav-links">
           <li><a href="#">About Us</a></li>
-          <li><a href="#">Program</a></li>
+          <!-- NEW (ganti program dengan kelas) -->
+          <li><a href="">Kelas</a></li>
           <li>
-            <a href="#"><button class="btn-konsultasi">Konsultasi</button></a>
+            <!-- NEW (Add link WA)-->
+            <a
+              href="https://web.whatsapp.com/send?phone=6281216365729&text=Halo%20Kak%20Nia,%20saya%20ingin%20Bertanya%20tentang%20Bimbel%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
+              ><button class="btn-konsultasi">Konsultasi</button></a
+            >
           </li>
         </ul>
       </div>
@@ -116,11 +122,12 @@
       <div class="box-best-program">
         <img class="model-best-program" src="assets/taruna.png" alt="" />
         <div class="text-and-program">
-          <h3 class="text-best-program">BEST PROGRAM</h3>
+          <h3 class="text-best-program">OUR PROGRAM</h3>
+          <!-- NEW (Routing page) -->
           <!-- <div class="parent-child-program"> -->
           <a
             class="link-web"
-            href="https://web.whatsapp.com/send?phone=6285600422188&text=Halo%20Kak%20Sari,%20saya%20ingin%20Bertanya%20Tentang%20Program%20Komando%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
+            href="./Pageprogram/ProgramKomando/ProgramKomando.html"
           >
             <img
               class="child-program"
@@ -130,7 +137,7 @@
           </a>
           <a
             class="link-web"
-            href="https://web.whatsapp.com/send?phone=6281216365729&text=Halo%20Kak%20Nia,%20saya%20ingin%20Bertanya%20Tentang%20Program%20Presisi%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
+            href="./Pageprogram/ProgramPresisi/ProgramPresisi.html"
           >
             <img
               class="child-program"
@@ -140,7 +147,7 @@
           </a>
           <a
             class="link-web"
-            href="https://web.whatsapp.com/send?phone=6285600422188&text=Halo%20Kak%20Sari,%20saya%20ingin%20Bertanya%20Tentang%20Program%20Taktis%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
+            href="./Pageprogram/ProgramTaktis/ProgramTaktis.html"
           >
             <img
               class="child-program"
@@ -150,7 +157,7 @@
           </a>
           <a
             class="link-web"
-            href="https://web.whatsapp.com/send?phone=6281216365729&text=Halo%20Kak%20Nia,%20saya%20ingin%20Bertanya%20Tentang%20Program%20Presisi%20Taruna%20Akurasi.%20Mohon%20info%20selengkapnya%20..."
+            href="./Pageprogram/ProgramAkurasi/ProgramAkurasi.html"
           >
             <img
               class="child-program"
@@ -168,10 +175,142 @@
       <img class="divinder-page" src="assets/divinder.png" alt="" />
     </div>
 
+    <!-- NEW -->
+    <!-- MASTER TEACHER -->
+
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <h1 class="title-mt">MASTER TEACHER</h1>
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <!-- 1 -->
+              <img class="bg-mt" src="assets/master_teacher/_nela.jpg" alt="" />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Mella Narolita</h2>
+              <div class="parent-card-mt">
+                <img
+                  class="img-mt"
+                  src="https://api.edulink-indonesia.com/images/cd954abb2f3a0d0957b227fd44a4a291.jpg"
+                  alt=""
+                />
+
+                <p class="description">
+                  Master Teacher Psikology | Bahasa Inggris
+                </p>
+              </div>
+              <img
+                class="five-star"
+                src="https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg"
+                alt=""
+              />
+              <button class="button">S2 - Universitas Gadjah Mada</button>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <!-- 2 -->
+              <img
+                class="bg-mt"
+                src="assets/master_teacher/_husna.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Nailal Husna</h2>
+              <div class="parent-card-mt">
+                <img
+                  class="img-mt"
+                  src="https://api.edulink-indonesia.com/images/7b4a916bce083f6843c7461610820308.jpeg"
+                  alt=""
+                />
+
+                <p class="description">Master Teacher Penalaran Numerik</p>
+              </div>
+              <img
+                class="five-star"
+                src="https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg"
+                alt=""
+              />
+              <button class="button">S1 - Universitas Gadjah Mada</button>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <!-- 3 -->
+              <img
+                class="bg-mt"
+                src="assets/master_teacher/_bangun.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Bangun Tri Susilo</h2>
+              <div class="parent-card-mt">
+                <img
+                  class="img-mt"
+                  src="https://api.edulink-indonesia.com/images/40d03b905cca0876a0f3cd6082267438.jpg"
+                  alt=""
+                />
+
+                <p class="description">Master Teacher SKD | TWK</p>
+              </div>
+              <img
+                class="five-star"
+                src="https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg"
+                alt=""
+              />
+              <button class="button">S1 - Universitas Gadjah Mada</button>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <!-- 4 -->
+              <img
+                class="bg-mt"
+                src="assets/master_teacher/_paklukman.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="card-content">
+              <h2 class="name">Lukman Sambodo</h2>
+              <div class="parent-card-mt">
+                <img
+                  class="img-mt"
+                  src="https://api.edulink-indonesia.com/images/53a522298e38fc49ab11c5c913db757b.jpeg"
+                  alt=""
+                />
+
+                <p class="description">Coach Bimbingan Jasmani</p>
+              </div>
+              <img
+                class="five-star"
+                src="https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg"
+                alt=""
+              />
+              <button class="button">S1 - UNTAG 1945 Semarang</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
     <!-- TIMELINE MATERI -->
     <div class="parent-materi">
       <h1 class="title-materi">
-        &nbsp; Materi Program <br />&nbsp; Integritas Kedinasan
+        &nbsp; Layanan Materi <br />&nbsp; Terbaik Kami
       </h1>
       <img class="img-materi" src="assets/PNG_materi.png" alt="" />
     </div>
@@ -257,8 +396,14 @@
       </div>
     </div>
 
+    <!-- NEW (tambah promo 1) -->
     <!-- PROMO SGS -->
     <div class="parent-promo-sgs">
+      <img
+        class="img-promo-sgs"
+        src="assets/promo bimbel tni polri - taruna persada.png"
+        alt=""
+      />
       <img class="img-promo-sgs" src="assets/promo_sgs.jpg" alt="" />
     </div>
 
@@ -719,6 +864,28 @@
       </footer>
     </div>
 
+    <!-- NEW -->
+    <!-- FLOATING CTA (Letakan pada sumua page) -->
+    <div class="parent-cta">
+      <a
+        href="https://web.whatsapp.com/send?phone=6281216365729&text=Halo%20Kak%20Nia,%20saya%20ingin%20Klaim%20Diskon%20Program%20Bimbel%20TNI%20-Polri.%20Mohon%20info%20selengkapnya%20..."
+      >
+        <img
+          class="item-cta-promo"
+          src="assets/cta/waktunya_diskon_TP.png"
+          alt=""
+        />
+      </a>
+      <a
+        href="https://web.whatsapp.com/send?phone=6285600422188&text=Halo%20Kak%20Sari,%20saya%20ingin%20Bertanya%20tentang%20Bimbel%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
+      >
+        <img class="item-cta" src="assets/cta/whatsap_TP.png" alt="" />
+      </a>
+      <a href="tel:081216365729">
+        <img class="item-cta" src="assets/cta/Call_TP.png" alt="" />
+      </a>
+    </div>
+
     <!-- BOTTOM BAR -->
     <div class="parent-bottombar">
       <div id="bottom-bar">
@@ -747,12 +914,12 @@
             alt=""
           />
           <br />
-          <span class="text-bottombar">Program</span>
+          <span class="text-bottombar">Kelas</span>
         </div>
         <div class="bottom-bar-element">
           <a
             class="link-web"
-            href="https://web.whatsapp.com/send?phone=6281216365729&text=Halo%20Kak%20Nia,%20saya%20ingin%20Bertanya%20tentang%20PBimbel%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
+            href="https://web.whatsapp.com/send?phone=6281216365729&text=Halo%20Kak%20Nia,%20saya%20ingin%20Bertanya%20tentang%20Bimbel%20Taruna%20Persada.%20Mohon%20info%20selengkapnya%20..."
           >
             <img
               class="icon-bottombar"
@@ -766,6 +933,12 @@
       </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <!--Uncomment this line-->
+    <script src="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
     <script src="/Homepage.js"></script>
   </body>
 </html>
