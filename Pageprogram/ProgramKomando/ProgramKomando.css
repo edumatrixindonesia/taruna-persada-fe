@@ -139,7 +139,11 @@ nav .nav-content {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 3%;
-  background: #000000;
+  height: auto;
+  background-image: url("/assets/bg_globe.jpeg");
+  background-size: cover;
+  background-position: top;
+  /* background-attachment: fixed; */
 }
 .title-benefit-komando {
   font-size: 60px;

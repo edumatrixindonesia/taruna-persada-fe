@@ -141,6 +141,9 @@ nav .nav-content {
   padding-right: 10%;
   padding-top: 3%;
   background: #000000;
+  background-image: url("/assets/bg_globe.jpeg");
+  background-size: cover;
+  background-position: top;
 }
 .title-benefit-presisi {
   font-size: 60px;
