@@ -895,7 +895,6 @@ body {
 .parent-2-program {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 30px;
   color: white;
   margin-top: 20px;
@@ -924,15 +923,15 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
-.program-rekomendasi-taktis {
+.program-rekomendasi-presisi {
   display: grid;
-  background: #2f76b46c;
+  background: #047a857e;
   padding: 50px;
   gap: 10px;
   border-radius: 5px;
   transition: 0.5s;
 }
-.program-rekomendasi-taktis:hover {
+.program-rekomendasi-presisi:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -960,11 +959,11 @@ body {
   color: #f8a812;
   border-radius: 5px;
 }
-.harga-program-taktis {
+.harga-program-presisi {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  background: #2f76b4;
+  background: #047a85;
   border: 1px solid transparent;
   padding: 5px;
   font-family: "Poppins", sans-serif;
@@ -986,8 +985,8 @@ body {
   width: 100%;
   cursor: pointer;
 }
-.btn-daftar-sekarang-taktis {
-  background: #2f76b4;
+.btn-daftar-sekarang-presisi {
+  background: #047a85;
   border: 1px solid transparent;
   padding: 5px;
   font-family: "Poppins", sans-serif;
