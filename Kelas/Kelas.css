@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  font-size: 1.2rem;
+  grid-template-columns: 30% 70%;
+  background: #701014;
+}
+
+.filters {
+  padding: 30px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  background: #701014;
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+  border-radius: 10px;
+}
+
+.filters li {
+  list-style-type: none;
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+}
+
+.filters li label {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+}
+
+.filters li input {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.item-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding: 20px;
+}
+
+.item-wrapper .item {
+  padding: 10px;
+  width: 25%;
+  float: left;
+  /* height: 200px; */
+}
+
+.item,
+.child-item {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.title-search-kelas {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Nature */
+.filters:has(> li input[name="akpol"]:checked)
+  + .item-wrapper
+  > .item:not([data-type="akpol"]) {
+  display: none;
+}
+
+.filters:has(> li input[name="akpol"]:checked)
+  + .item-wrapper
+  > .item[data-type="akpol"] {
+  display: flex !important;
+}
+
+/* Sunset */
+.filters:has(> li input[name="akmil"]:checked)
+  + .item-wrapper
+  > .item:not([data-type="akmil"]) {
+  display: none;
+}
+
+.filters:has(> li input[name="akmil"]:checked)
+  + .item-wrapper
+  > .item[data-type="akmil"] {
+  display: flex !important;
+}
+
+/* Technology */
+.filters:has(> li input[name="bintara"]:checked)
+  + .item-wrapper
+  > .item:not([data-type="bintara"]) {
+  display: none;
+}
+
+.filters:has(> li input[name="bintara"]:checked)
+  + .item-wrapper
+  > .item[data-type="bintara"] {
+  display: flex !important;
+}
+
+/* Indoor */
+.filters:has(> li input[name="sekolahKedinasan"]:checked)
+  + .item-wrapper
+  > .item:not([data-type="sekolahKedinasan"]) {
+  display: none;
+}
+
+.filters:has(> li input[name="sekolahKedinasan"]:checked)
+  + .item-wrapper
+  > .item[data-type="sekolahKedinasan"] {
+  display: flex !important;
+}
+
+
+/* RESPONSIVE */
+/* PHONE */
+@media only screen and (min-width: 320px) and (max-width: 896px) {
+  main {
+    display: inline-block;
+    height: auto;
+    font-size: 13px;
+  }
+  .item-wrapper .item {
+    width: 100%;
+  }
+  .filters li input {
+    outline: none;
+  }
+}

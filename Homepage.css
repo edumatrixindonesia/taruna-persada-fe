@@ -312,7 +312,7 @@ nav .nav-content {
 .text-image-about-tp {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   padding-left: 10%;
   padding-right: 10%;
   gap: 60px;
@@ -358,6 +358,97 @@ nav .nav-content {
   margin-top: -5px;
 }
 
+/* NEW */
+/* VENUE */
+.bg-venue {
+  height: auto;
+  width: 100%;
+  background-image: url("assets/bg_about_tp.png");
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+.text-image-venue {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 60px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  flex-direction: row-reverse;
+}
+.title-venue {
+  font-size: 50px;
+  color: white;
+  line-height: 60px;
+  width: 70%;
+}
+.deskripsi-venue {
+  color: white;
+  font-size: 20px;
+  /* margin-top: 20px; */
+  text-align: justify;
+}
+.img-venue {
+  width: 50%;
+}
+
+/* NEW */
+/* KELAS */
+.title-kelas-tni-polri {
+  color: white;
+  font-size: 40px;
+  border-left: 15px solid #df2028;
+  width: 20%;
+  line-height: 45px;
+}
+.text-kelas-tni-polri {
+  color: rgb(192, 123, 19);
+}
+.parent-kelas {
+  display: grid;
+  background: #000000;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5%;
+}
+.box-kelas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #701014;
+  padding: 50px;
+  gap: 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.item-kelas {
+  width: 100%;
+}
+
+/* SLIDER KELAS */
+.home-demo .item {
+  background: #ff3f4d;
+}
+.box-kelas-kedinasan {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 40px;
+}
+.home-demo h2 {
+  color: #fff;
+  text-align: center;
+  /* padding: 5rem 0; */
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+.img-kedinasan {
+  width: 100%;
+}
+
 /* BEST PROGRAM */
 .parent-best-program {
   background-color: #000000;
@@ -394,6 +485,7 @@ nav .nav-content {
 .text-best-program {
   color: white;
   font-size: 40px;
+  margin-left: 10px;
 }
 
 /* DIVINDER */
@@ -408,36 +500,36 @@ nav .nav-content {
 
 /* MASTER TEACHER */
 /* Google Fonts - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-.slide-container{
+.slide-container {
   max-width: 1120px;
   width: 100%;
   padding: 40px 0;
 }
-.slide-content{
+.slide-content {
   margin: 0 40px;
   overflow: hidden;
   /* border-radius: 25px; */
 }
-.card{
+.card {
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .image-content,
-.card-content{
+.card-content {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   padding: 10px 14px;
   gap: 5px;
 }
-.image-content{
+.image-content {
   position: relative;
   row-gap: 0;
   padding: 0 0;
 }
-.overlay{
+.overlay {
   /* position: absolute; */
   left: 0;
   top: 0;
@@ -447,7 +539,7 @@ nav .nav-content {
   border-radius: 25px 25px 0 0px;
 }
 .overlay::before,
-.overlay::after{
+.overlay::after {
   /* content: ''; */
   position: absolute;
   right: 0;
@@ -456,39 +548,39 @@ nav .nav-content {
   width: 40px;
   background-color: #701014;
 }
-.overlay::after{
+.overlay::after {
   border-radius: 0 25px 0 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
-.card-image{
+.card-image {
   position: relative;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  background: #FFF;
+  background: #fff;
   padding: 3px;
 }
-.card-image .card-img{
+.card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #701014;
 }
-.name{
+.name {
   font-size: 18px;
   font-weight: 600;
   color: #333;
 }
-.description{
+.description {
   font-size: 16px;
   color: #707070;
   /* text-align: center; */
 }
-.button{
+.button {
   border: none;
   font-size: 16px;
-  color: #FFF;
+  color: #fff;
   padding: 8px 16px;
   background-color: #701014;
   border-radius: 6px;
@@ -496,32 +588,32 @@ nav .nav-content {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button:hover{
+.button:hover {
   background: #701014;
 }
 
-.swiper-navBtn{
+.swiper-navBtn {
   color: #701014;
   transition: color 0.3s ease;
 }
-.swiper-navBtn:hover{
+.swiper-navBtn:hover {
   color: #701014;
 }
 .swiper-navBtn::before,
-.swiper-navBtn::after{
+.swiper-navBtn::after {
   font-size: 35px;
 }
-.swiper-button-next{
+.swiper-button-next {
   right: 0;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   left: 0;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #df2028;
   opacity: 1;
 }
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   background-color: #701014;
 }
 .title-mt {
@@ -529,6 +621,7 @@ nav .nav-content {
   text-align: center;
   margin-bottom: 20px;
   font-size: 40px;
+  margin-top: 60px;
 }
 .parent-card-mt {
   display: flex;
@@ -544,14 +637,13 @@ nav .nav-content {
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content{
+  .slide-content {
     margin: 0 10px;
   }
-  .swiper-navBtn{
+  .swiper-navBtn {
     display: none;
   }
 }
-
 
 /* TIMELINE MATERI */
 .parent-materi {
@@ -695,6 +787,17 @@ nav .nav-content {
 }
 
 /* GALERI KEGIATAN */
+.child-galeri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.item-binsik {
+  width: 25%;
+}
 .parent-galeri-kegiatan {
   background: #000000;
   color: white;
@@ -779,6 +882,166 @@ body {
   }
 }
 
+/* NEW */
+/* REKOMENDASI PROGRAM */
+.parent-rekomendasi-program {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.title-rekomendasi-program {
+  border-left: 15px solid #df2028;
+  color: white;
+}
+.parent-2-program {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.parent-2-program:hover {
+  gap: 50px;
+  margin-top: 60px;
+  transition: 0.5s;
+}
+.item-rekomendasi-program {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  gap: 10px;
+}
+.program-rekomendasi-komando {
+  display: grid;
+  background: #7010137c;
+  padding: 50px;
+  gap: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.program-rekomendasi-komando:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.program-rekomendasi-taktis {
+  display: grid;
+  background: #2f76b46c;
+  padding: 50px;
+  gap: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.program-rekomendasi-taktis:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.title-rekomendasi-program-komando {
+  color: #f8a812;
+  text-align: center;
+  line-height: 50px;
+}
+.text-rekomendasi {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+}
+.harga-program-komando {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background: #df2028;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #f8a812;
+  border-radius: 5px;
+}
+.harga-program-taktis {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background: #2f76b4;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #f8a812;
+  border-radius: 5px;
+}
+.btn-daftar-sekarang-komando {
+  background: #df2028;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.btn-daftar-sekarang-taktis {
+  background: #2f76b4;
+  border: 1px solid transparent;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+.text-juta {
+  font-size: 25px;
+}
+
+/* NEW */
+/* KOTA */
+.parent-kota {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+}
+.title-kota {
+  color: white;
+  border-left: 15px solid #df2028;
+}
+.img-kota {
+  width: 100%;
+}
+.parent-nama-kota {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  color: white;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item-kota {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  border: 3px solid #df2028;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 15%;
+  text-align: center;
+}
+.item-kota:hover {
+  background: #701014;
+  transition: all 0.2s;
+}
+
 /* NEW (tambah gap) */
 /* PROMO SGS */
 .parent-promo-sgs {
@@ -800,7 +1063,7 @@ body {
 .parent-testimoni-siswa {
   background: #000000;
   color: white;
-  padding-top: 100px;
+  padding-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -1051,6 +1314,17 @@ main {
 }
 
 /* FOOTER */
+.parent-media-partner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.img-media-partner {
+  width: 48%;
+  border-radius: 3px;
+}
 .pg-footer {
   font-family: "Roboto", sans-serif;
 }
@@ -1281,6 +1555,7 @@ main {
   align-items: center;
   gap: 15px;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 /* Media Query For different screens */
@@ -1355,6 +1630,96 @@ main {
 /* RESPONSIVE */
 /* PHONE */
 @media only screen and (min-width: 320px) and (max-width: 896px) {
+  /* NEW */
+  /* REKOMENDASI PROGRAM */
+  .parent-2-program {
+    display: grid;
+  }
+  .parent-rekomendasi-program {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .program-rekomendasi-komando, .program-rekomendasi-taktis {
+    padding: 20px;
+  }
+  .title-rekomendasi-program {
+    font-size: 23px;
+    border-left: 10px solid #df2028;
+  }
+  .title-rekomendasi-program-komando {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .text-rekomendasi {
+    font-size: 50px;
+  }
+  .harga-program-komando, .harga-program-taktis {
+    font-size: 35px;
+  }
+  .btn-daftar-sekarang-komando, .btn-daftar-sekarang-taktis {
+    font-size: 20px;
+  }
+  /* NEW */
+  /* VENUE */
+  .text-image-venue {
+    display: grid;
+    place-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    gap: 30px;
+  }
+  .deskripsi-venue {
+    font-size: 17px;
+  }
+  .title-venue {
+    font-size: 33px;
+    line-height: 35px;
+    width: 100%;
+    text-align: center;
+  }
+  .parent-divinder-venue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-venue {
+    width: 100%;
+  }
+
+  /* NEW */
+  /* KOTA */
+  .parent-kota {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 20px;
+  }
+  .title-kota {
+    font-size: 23px;
+    border-left: 10px solid #df2028;
+  }
+  .parent-nama-kota {
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .item-kota {
+    width: 20%;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .child-galeri {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+  }
+  .item-binsik {
+    width: 100%;
+  }
+  .text-best-program {
+    margin-left: 0;
+    font-size: 30px;
+    margin-top: 20px;
+  }
   .text-image {
     display: grid;
     padding-left: 3%;
@@ -1413,7 +1778,7 @@ main {
   .parent-best-program {
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 15px;
+    padding-top: 60px;
   }
   .model-best-program {
     display: none;
@@ -1436,16 +1801,33 @@ main {
   }
   .title-materi {
     font-size: 25px;
+    margin-top: 50px;
+    border-left: 10px solid #df2028;
   }
   .parent-faq {
     padding-left: 3%;
     padding-right: 3%;
+  }
+  .parent-kelas {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .box-kelas {
+    padding: 5px;
+    gap: 3px;
+  }
+  .title-kelas-tni-polri {
+    font-size: 25px;
+    line-height: 27px;
+    border-left: 10px solid #df2028;
   }
   .title-faq {
     font-size: 23px;
   }
   .title-testimoni {
     font-size: 23px;
+    margin-top: 80px;
+    border-left: 10px solid #df2028;
   }
   .card-content {
     overflow: visible;
@@ -1483,7 +1865,7 @@ main {
     padding-right: 3%;
   }
   .title-faq {
-    border-left: 15px solid #df2028;
+    border-left: 10px solid #df2028;
   }
   .parent-img-media-masa {
     display: flex;
@@ -1515,6 +1897,8 @@ main {
   }
   .title-galeri-kegiatan {
     margin-top: 0;
+    font-size: 23px;
+    border-left: 10px solid #df2028;
   }
   /* NEW */
   /* FLOATING CTA */
@@ -1546,6 +1930,41 @@ main {
 
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1366px) {
+    /* NEW */
+  /* REKOMENDASI PROGRAM */
+  .parent-2-program {
+    display: grid;
+  }
+  .parent-rekomendasi-program {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  /* NEW */
+  /* KOTA */
+  .parent-kota {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 20px;
+  }
+  .child-galeri {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5%;
+  }
+  .item-binsik {
+    width: 30%;
+  }
+  .parent-kelas {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .box-kelas {
+    padding: 10px;
+    gap: 8px;
+  }
+  .text-best-program {
+    margin-left: 10px;
+  }
   .carousel-slide {
     flex: 1 0 40%;
   }
@@ -1564,6 +1983,15 @@ main {
   .img-about-tp {
     width: 100%;
   }
+  .text-image-venue {
+    display: grid;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .img-venue {
+    width: 100%;
+  }
+
   .parent-best-program,
   .parent-materi,
   .parent-promo-sgs,
@@ -1605,6 +2033,31 @@ main {
 
 /* DESKTOP */
 @media only screen and (min-width: 903px) and (max-width: 1537px) {
+  /* NEW */
+  /* REKOMENDASI PROGRAM */
+  .parent-rekomendasi-program {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  /* NEW */
+  /* VENUE */
+  .text-image-venue {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  /* NEW */
+  /* KOTA */
+  .parent-kota {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 20px;
+  }
+  .parent-kelas {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
   .model-tp {
     width: 60%;
   }

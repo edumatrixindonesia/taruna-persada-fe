@@ -78,11 +78,13 @@ document.querySelectorAll(".accordion-item").forEach((item) => {
   });
 });
 
-
 // MASTER TEACHER
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 4,
   spaceBetween: 25,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
   loop: true,
   centerSlide: "true",
   fade: "true",
@@ -108,4 +110,17 @@ var swiper = new Swiper(".slide-content", {
       slidesPerView: 3,
     },
   },
+});
+
+// KELAS
+$(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 7,
+    margin: 10,
+    loop: true,
+    nav: true,
+    autoplay: true
+  });
 });
