@@ -1638,7 +1638,7 @@ main {
     padding-left: 3%;
     padding-right: 3%;
   }
-  .program-rekomendasi-komando, .program-rekomendasi-taktis {
+  .program-rekomendasi-komando, .program-rekomendasi-presisi {
     padding: 20px;
   }
   .title-rekomendasi-program {
@@ -1652,10 +1652,10 @@ main {
   .text-rekomendasi {
     font-size: 50px;
   }
-  .harga-program-komando, .harga-program-taktis {
+  .harga-program-komando, .harga-program-presisi {
     font-size: 35px;
   }
-  .btn-daftar-sekarang-komando, .btn-daftar-sekarang-taktis {
+  .btn-daftar-sekarang-komando, .btn-daftar-sekarang-presisi {
     font-size: 20px;
   }
   /* NEW */
