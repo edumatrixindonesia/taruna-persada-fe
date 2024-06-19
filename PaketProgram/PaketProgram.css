@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+  z-index: 9;
+}
+nav.sticky {
+  padding: 10px 20px;
+  background: #08080886;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .nav-content {
+  height: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 4px;
+  transition: all 0.3 ease;
+}
+
+.nav-links li a:hover {
+  color: #ffffff;
+}
+
+.nav.sticky .nav-links li a {
+  color: #fff;
+  transition: all 0.4 ease;
+}
+
+.nav.sticky .nav-links li a:hover {
+  color: #0e2431;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.text {
+  text-align: justify;
+  padding: 40px 80px;
+  box-sizing: -5px 0 10px rgba(0, 0, 0, 0.1);
+  line-height: 27px;
+}
+.logo-tp {
+  width: 55%;
+}
+.btn-konsultasi {
+  background: #df2028;
+  color: white;
+  border: 1px solid transparent;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* HERO */
+.bg-hero-paket {
+  height: auto;
+  width: 100%;
+  background-image: url("/assets/bg_hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.text-image-paket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  gap: 15px;
+}
+.title-tp-paket {
+  font-size: 50px;
+  color: white;
+  line-height: 60px;
+  text-align: center;
+}
+.deskripsi-tp-paket {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+.model-tp-paket {
+  bottom: 0;
+}
+
+/* PROMO */
+.parent-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.img-promo-paket-tp {
+  width: 100%;
+  margin-top: -3%;
+  border-radius: 5px;
+}
+
+/* PAKET */
+.container-paket-komando {
+  background: black;
+  height: auto;
+  width: 100%;
+  background-image: url("assets/program_komando/bg_programkomando.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20%;
+}
+.container-paket-taktis {
+  background: black;
+  height: auto;
+  width: 100%;
+  background-image: url("assets/program_taktis/bg_programTaktis.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20%;
+}
+.container-paket-presisi {
+  background: black;
+  height: auto;
+  width: 100%;
+  background-image: url("assets/program_presisi/bg_programpresisi.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20%;
+}
+.container-paket-akurasi {
+  background: black;
+  height: auto;
+  width: 100%;
+  background-image: url("assets/program_akurasi/bg_programakurasi.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20%;
+}
+
+.paket-dan-harga {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 20px;
+}
+.rincian-paket {
+  background: #cc2a327e;
+  color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  width: 50%;
+}
+.parent-rincian-dan-text {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  text-decoration: none;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+}
+.parent-harga-hemat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.harga-hemat {
+  background: #9b0109;
+  border: 1px solid transparent;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -10%;
+  width: 50%;
+}
+.parent-harga-paket {
+  text-align: center;
+  background: #cc2a327e;
+  color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  width: 30%;
+}
+.text-program-komando {
+  width: 70%;
+}
+.harga-paket {
+  color: white;
+  font-size: 25px;
+}
+.btn-harga-paket {
+  background: rgb(238, 128, 3);
+  color: white;
+  border: 1px solid transparent;
+  font-size: 30px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.parent-model-komando {
+  display: grid;
+  place-items: end;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+}
+.model-paket-komando {
+  width: 35%;
+  margin-top: -12%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.divinder-paket {
+  width: 100%;
+  margin-top: -18%;
+}
+.free-live-class {
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* AKURASI */
+a.button_link {
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  background: linear-gradient(to bottom, #0103dd, #010263);
+  transition: background-color 0.3s;
+  transform: skew(15deg);
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px;
+}
+a.button_link > .name {
+  display: inline-block;
+  transform: skew(-15deg);
+  font-weight: 600;
+}
+.parent-btn-akurasi {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.parallelogram-paket {
+  font-size: 60px;
+}
+
+.paket-dan-harga-akurasi {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 20px;
+}
+.rincian-paket-akurasi {
+  background: #0c11707e;
+  color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  width: 50%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.parent-rincian-dan-text-akurasi {
+  display: flex;
+  justify-content: baseline;
+  align-items: baseline;
+  text-decoration: none;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+}
+.parent-harga-hemat-akurasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.harga-hemat-akurasi {
+  background: #9b0109;
+  border: 1px solid transparent;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -10%;
+  width: 50%;
+  margin-bottom: 5%;
+}
+.parent-harga-paket-akurasi {
+  text-align: center;
+  background: #0c11707e;
+  color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+  width: 30%;
+}
+.text-program-komando-akurasi {
+  width: 70%;
+}
+.harga-paket-akurasi {
+  color: white;
+  font-size: 25px;
+}
+.btn-harga-paket-akurasi {
+  background: rgb(238, 128, 3);
+  color: white;
+  border: 1px solid transparent;
+  font-size: 30px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.parent-free-live-class-akurasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+.free-live-class-akurasi {
+  width: 30%;
+}
+.parent-model-akurasi {
+  display: grid;
+  place-items: end;
+  /* padding-left: 10%;
+    padding-right: 10%; */
+}
+.model-paket-akurasi {
+  width: 25%;
+  margin-top: -12%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* RESPONSIVE */
+/* PHONE */
+@media only screen and (min-width: 320px) and (max-width: 896px) {
+  .text-image-paket {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .title-tp-paket {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+  }
+  .deskripsi-tp-paket {
+    text-align: justify;
+  }
+  /* .break-paket {
+        display: none;
+    } */
+  .parent-promo {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 30px;
+  }
+  .parent-rincian-dan-text {
+    font-weight: 400;
+    font-size: 17px;
+  }
+  .img-promo-paket-tp {
+    width: 100%;
+  }
+  .paket-dan-harga, .paket-dan-harga-akurasi {
+    display: grid;
+    place-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .rincian-paket, .rincian-paket-akurasi {
+    width: 100%;
+  }
+  .parent-harga-paket, .parent-harga-paket-akurasi {
+    width: 100%;
+  }
+  .model-paket-komando, .model-paket-akurasi {
+    width: 100%;
+    margin-top: 0;
+    margin: 0;
+  }
+  .harga-hemat, .harga-hemat-akurasi {
+    margin-top: -17%;
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .parent-btn-akurasi {
+    margin: 20px;
+  }
+  .parent-free-live-class-akurasi {
+
+  }
+  .free-live-class-akurasi {
+    width: 80%;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1366px) {
+    .harga-hemat, .harga-hemat-akurasi {
+        margin-top: -10%;
+    }
+}

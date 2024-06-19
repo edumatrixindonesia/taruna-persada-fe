@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* NAVBAR */
 nav {
   position: fixed;
@@ -883,6 +884,22 @@ body {
 }
 
 /* NEW */
+/* VIDEO YT */
+.container-yt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 10px;
+  margin-top: 10px;
+}
+.item-yt {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+}
+
+/* NEW */
 /* REKOMENDASI PROGRAM */
 .parent-rekomendasi-program {
   padding-left: 10%;
@@ -1630,6 +1647,18 @@ main {
 /* PHONE */
 @media only screen and (min-width: 320px) and (max-width: 896px) {
   /* NEW */
+/* VIDEO YT */
+.container-yt {
+  display: grid;
+  justify-content: normal;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.item-yt {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+  /* NEW */
   /* REKOMENDASI PROGRAM */
   .parent-2-program {
     display: grid;
@@ -1638,7 +1667,8 @@ main {
     padding-left: 3%;
     padding-right: 3%;
   }
-  .program-rekomendasi-komando, .program-rekomendasi-presisi {
+  .program-rekomendasi-komando,
+  .program-rekomendasi-presisi {
     padding: 20px;
   }
   .title-rekomendasi-program {
@@ -1652,10 +1682,12 @@ main {
   .text-rekomendasi {
     font-size: 50px;
   }
-  .harga-program-komando, .harga-program-presisi {
+  .harga-program-komando,
+  .harga-program-presisi {
     font-size: 35px;
   }
-  .btn-daftar-sekarang-komando, .btn-daftar-sekarang-presisi {
+  .btn-daftar-sekarang-komando,
+  .btn-daftar-sekarang-presisi {
     font-size: 20px;
   }
   /* NEW */
@@ -1812,8 +1844,13 @@ main {
     padding-right: 3%;
   }
   .box-kelas {
+    display: block;
+    flex-wrap: wrap;
     padding: 5px;
     gap: 3px;
+  }
+  .item-kelas {
+    width: 49%;
   }
   .title-kelas-tni-polri {
     font-size: 25px;
@@ -1929,7 +1966,7 @@ main {
 
 /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1366px) {
-    /* NEW */
+  /* NEW */
   /* REKOMENDASI PROGRAM */
   .parent-2-program {
     display: grid;
